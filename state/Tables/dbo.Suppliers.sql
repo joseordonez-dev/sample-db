@@ -11,7 +11,8 @@ CREATE TABLE [dbo].[Suppliers]
 [Country] [nvarchar] (15) COLLATE Modern_Spanish_CI_AS NULL,
 [Phone] [nvarchar] (24) COLLATE Modern_Spanish_CI_AS NULL,
 [Fax] [nvarchar] (24) COLLATE Modern_Spanish_CI_AS NULL,
-[HomePage] [ntext] COLLATE Modern_Spanish_CI_AS NULL
+[HomePage] [ntext] COLLATE Modern_Spanish_CI_AS NULL,
+[SecondaryAddress] [nvarchar] (40) COLLATE Modern_Spanish_CI_AS NULL
 ) ON [PRIMARY]
 GO
 ALTER TABLE [dbo].[Suppliers] ADD CONSTRAINT [PK_Suppliers] PRIMARY KEY CLUSTERED ([SupplierID]) ON [PRIMARY]
