@@ -4,8 +4,7 @@ CREATE TABLE [dbo].[Categories]
 [CategoryName] [nvarchar] (15) COLLATE Modern_Spanish_CI_AS NOT NULL,
 [Description] [ntext] COLLATE Modern_Spanish_CI_AS NULL,
 [Picture] [image] NULL,
-[ExtraField] [nvarchar] (50) COLLATE Modern_Spanish_CI_AS NULL,
-[ExtraField2] [nvarchar] (30) COLLATE Modern_Spanish_CI_AS NULL
+[ExtraField] [nvarchar] (50) COLLATE Modern_Spanish_CI_AS NULL
 ) ON [PRIMARY]
 GO
 ALTER TABLE [dbo].[Categories] ADD CONSTRAINT [PK_Categories] PRIMARY KEY CLUSTERED ([CategoryID]) ON [PRIMARY]
